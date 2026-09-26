@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>本草堂 · 中医预约</title>
+  <meta name="description" content="本草堂中医门诊在线预约" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@400;500;600;700&family=Source+Han+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="topline"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="本草堂首页"><span class="brand-mark">本</span><span><b>本草堂</b><small>BENCAO CLINIC</small></span></a>
+    <nav aria-label="主导航"><a class="active" href="#home">首页</a><a href="#doctors">名医坐诊</a><a href="#services">诊疗项目</a><a href="#visit">就诊指南</a></nav>
+    <div class="header-actions"><button class="text-btn" id="myAppointments">我的预约</button><button class="admin-entry" id="adminEntry">管理后台 <span>↗</span></button></div>
+  </header>
+
+  <main id="patientApp">
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">诚于医 · 精于术 · 济于人</p>
+        <h1>让身心，<em>回归本然。</em></h1>
+        <p class="hero-desc">以传统中医智慧守护当代生活。在线选择医师与时段，开启一场安心、从容的问诊。</p>
+        <div class="hero-buttons"><a class="primary-btn" href="#booking">立即预约 <span>→</span></a><a class="secondary-btn" href="#doctors">认识医师</a></div>
+        <div class="hero-data"><div><strong>12</strong><span>位资深医师</span></div><div><strong>20+</strong><span>年临床积淀</span></div><div><strong>8,600</strong><span>位患者信赖</span></div></div>
+      </div>
+      <div class="hero-art" aria-label="中药与山水插画">
+        <div class="sun"></div><div class="mountain m1"></div><div class="mountain m2"></div><div class="mountain m3"></div><div class="mist mist1"></div><div class="mist mist2"></div>
+        <div class="herb-card"><span class="seal">药</span><p>一人一方<br><b>辨证施治</b></p></div><div class="branch branch-a">❦</div><div class="branch branch-b">❧</div>
+      </div>
+    </section>
+
+    <section class="trust-strip"><div><span>◈</span>正规医师执业</div><div><span>◈</span>私密诊疗空间</div><div><span>◈</span>一医一患一诊室</div><div><span>◈</span>完整病历留存</div></section>
+
+    <section class="section doctors-section" id="doctors"><div class="section-heading"><div><p class="eyebrow">医者仁心</p><h2>选择适合您的医师</h2></div><button class="link-btn" id="viewAllDoctors">查看全部医师 <span>→</span></button></div><div class="doctor-grid" id="doctorGrid"></div></section>
+
+    <section class="booking-section" id="booking"><div class="booking-intro"><p class="eyebrow">在线预约</p><h2>给身体一段<br><em>被认真倾听的时间</em></h2><p>选择诊疗项目、医师与方便的就诊时间。预约成功后，我们将通过短信向您发送确认信息。</p><div class="booking-note"><span>i</span><p><b>初次就诊？</b><br>建议预留 45 分钟，以便医师充分了解您的身体状况。</p></div></div><form class="booking-card" id="bookingForm"><div class="form-head"><span>01</span><div><b>预约信息</b><small>请依次选择您的就诊偏好</small></div></div><label>诊疗项目<select id="serviceSelect"><option value="初诊 · 中医内科">初诊 · 中医内科（45分钟）</option><option value="复诊 · 调理随访">复诊 · 调理随访（30分钟）</option><option value="针灸调理">针灸调理（50分钟）</option><option value="推拿理疗">推拿理疗（50分钟）</option></select></label><label>选择医师<select id="doctorSelect"></select></label><div class="field-label">选择日期</div><div class="date-row" id="dateRow"></div><div class="field-label time-label">可预约时段</div><div class="time-grid" id="timeGrid"></div><button class="primary-btn submit-btn" type="submit">下一步，填写信息 <span>→</span></button><p class="form-privacy">提交即表示您已阅读并同意 <a href="#privacy">《隐私告知书》</a></p></form></section>
+
+    <section class="section service-section" id="services"><div class="section-heading"><div><p class="eyebrow">诊疗所长</p><h2>以东方智慧，调养生命节律</h2></div></div><div class="service-grid"><article><span>脉</span><h3>中医内科</h3><p>脾胃、睡眠、情志、体质调理，以整体观辨识身体失衡。</p></article><article><span>针</span><h3>针灸调理</h3><p>循经取穴，疏通经络，缓解颈肩腰背及各类痛症不适。</p></article><article><span>和</span><h3>妇儿调养</h3><p>关注女性全周期与儿童体质，以温和方式守护家人健康。</p></article><article><span>养</span><h3>治未病</h3><p>体质辨识与四季养生建议，在日常中建立健康的底气。</p></article></div></section>
+
+    <section class="visit" id="visit"><div><p class="eyebrow">就诊指南</p><h2>初次来访，安心有序</h2></div><ol><li><b>01</b><span>线上选择医师与时间</span></li><li><b>02</b><span>收到预约确认短信</span></li><li><b>03</b><span>提前 10 分钟到馆签到</span></li><li><b>04</b><span>医师问诊，建立病历</span></li></ol></section>
+  </main>
+
+  <section class="admin-app hidden" id="adminApp"><aside class="sidebar"><a class="brand admin-brand"><span class="brand-mark">本</span><span><b>本草堂</b><small>诊所管理</small></span></a><p class="nav-label">诊疗运营</p><button class="side-link active" data-panel="overview">◫　工作台</button><button class="side-link" data-panel="appointments">▣　预约管理 <i>8</i></button><button class="side-link" data-panel="schedule">◷　排班管理</button><button class="side-link" data-panel="patients">♙　患者档案</button><button class="side-link" data-panel="records">▤　病历与处方</button><p class="nav-label">基础配置</p><button class="side-link" data-panel="doctors">✦　医师管理</button><button class="side-link" data-panel="services">◇　诊疗项目</button><button class="side-link" data-panel="logs">◌　操作日志</button><div class="side-bottom"><span class="user-avatar">林</span><div><b>林雅</b><small>系统管理员</small></div><button id="exitAdmin">↩</button></div></aside><div class="admin-main"><header class="admin-header"><div><p id="adminCrumb">工作台</p><h1 id="adminTitle">上午好，林雅</h1></div><div class="today">2026 年 9 月 26 日 · 星期五</div></header><div id="adminContent"></div></div></section>
+
+  <footer><div class="brand"><span class="brand-mark">本</span><span><b>本草堂</b><small>BENCAO CLINIC</small></span></div><p>以仁心守护每一次相遇。</p><p>营业时间：周一至周日 09:00—18:00　·　咨询电话：400-888-2026</p></footer>
+
+  <dialog id="patientDialog"><button class="modal-close" data-close>×</button><div class="modal-icon">✓</div><p class="eyebrow">预约已提交</p><h2>我们期待与您相见</h2><p class="modal-text" id="confirmationText"></p><button class="primary-btn" data-close>完成</button></dialog>
+  <dialog id="appointmentsDialog"><button class="modal-close" data-close>×</button><p class="eyebrow">我的预约</p><h2>预约记录</h2><div class="appointment-item"><div class="appt-day"><b>28</b><span>九月</span></div><div><b>中医内科 · 初诊</b><p>周文远 主任医师　·　09:30</p><small>已确认</small></div></div><button class="secondary-btn" data-close>关闭</button></dialog>
+  <script src="app.js"></script>
+</body>
+</html>

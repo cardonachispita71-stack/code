@@ -1,0 +1,14 @@
+{
+  "name": "code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "node --check app.js",
+    "start": "python3 -m http.server 4173"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
